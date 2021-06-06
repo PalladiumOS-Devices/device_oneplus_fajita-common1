@@ -1,0 +1,22 @@
+[
+  {
+    "remote": "github",
+    "repository": "Durgesh33/proprietary_vendor_oneplus",
+    "target_path": "vendor/oneplus",
+    "branch": "11"
+  },
+  {
+    "repository"  : "vendor_addons_oneplus_apps",
+    "target_path" : "vendor/addons/oneplus/apps"
+  },
+  {
+    "repository"  : "device_oneplus_common",
+    "target_path" : "device/oneplus/common"
+  },
+  {
+    "remote": "github",
+    "repository": "Durgesh33/kernel_oneplus_sdm845",
+    "target_path": "kernel/oneplus/sdm845",
+    "branch": "elle"   
+  }
+] 
