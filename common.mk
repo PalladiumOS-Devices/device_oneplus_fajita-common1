@@ -45,8 +45,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 29
-PRODUCT_EXTRA_VNDK_VERSIONS := $(PRODUCT_TARGET_VNDK_VERSION)
+PRODUCT_TARGET_VNDK_VERSION := 30
+PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -73,7 +73,7 @@ PRODUCT_PACKAGES += \
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService
+    AntHalService-Soong
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -110,11 +110,12 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libdisplayconfig \
+    libdisplayconfig.qti \
     libqdMetaData \
     libqdMetaData.system \
     libvulkan \
-    vendor.display.config@1.0
+    vendor.display.config@1.0 \
+    vendor.display.config@2.0
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -132,7 +133,7 @@ PRODUCT_PACKAGES += \
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-hotword.xml
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -150,6 +151,9 @@ PRODUCT_PACKAGES += \
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_profiles_vendor.xml
+
+PRODUCT_PACKAGES += \
+    libavservices_minijail
 
 # Net
 PRODUCT_PACKAGES += \
@@ -176,7 +180,7 @@ PRODUCT_BOOT_JARS += \
 # Power
 PRODUCT_PACKAGES += \
     power.qcom:64
-
+    
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
