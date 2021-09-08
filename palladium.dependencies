@@ -6,8 +6,10 @@
     "branch": "11"
   },
   {
-    "repository"  : "vendor_addons_oneplus_apps",
-    "target_path" : "vendor/addons/oneplus/apps"
+    "remote": "github",
+    "repository": "Durgesh33/vendor_addons_oneplus_apps",
+    "target_path": "vendor/addons/oneplus/apps",
+    "branch": "sdm845"
   },
   {
     "repository"  : "device_oneplus_common",
