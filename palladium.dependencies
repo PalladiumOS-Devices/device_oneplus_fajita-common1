@@ -17,8 +17,14 @@
   },
   {
     "remote": "github",
-    "repository": "Durgesh33/kernel_oneplus_sdm845",
+    "repository": "Durgesh33/kernel_oneplus",
     "target_path": "kernel/oneplus/sdm845",
-    "branch": "elle"   
+    "branch": "r"   
+  },
+  {
+    "remote": "github",
+    "repository": "Havoc-fajita/android_prebuilts_clang_host_linux-x86_clang-r416183b1",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-r416183b1",
+    "branch": "11.0"   
   }
 ] 
