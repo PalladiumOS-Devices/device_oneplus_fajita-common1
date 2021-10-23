@@ -1,13 +1,13 @@
 [
   {
     "remote": "github",
-    "repository": "Durgesh33/proprietary_vendor_oneplus",
+    "repository": "zahidmgsk/vendor_oneplus6",
     "target_path": "vendor/oneplus",
-    "branch": "11"
+    "branch": "r"
   },
   {
     "remote": "github",
-    "repository": "Durgesh33/vendor_addons_oneplus_apps",
+    "repository": "zahidmgsk/vendor_addons_oneplus_apps",
     "target_path": "vendor/addons/oneplus/apps",
     "branch": "sdm845"
   },
@@ -17,13 +17,13 @@
   },
   {
     "remote": "github",
-    "repository": "Durgesh33/kernel_oneplus",
+    "repository": "zahidmgsk/kernel_oneplus_sdm845r",
     "target_path": "kernel/oneplus/sdm845",
     "branch": "r"   
   },
   {
     "remote": "github",
-    "repository": "Havoc-fajita/android_prebuilts_clang_host_linux-x86_clang-r416183b1",
+    "repository": "zahidmgsk/android_prebuilts_clang_host_linux-x86_clang-r416183b1",
     "target_path": "prebuilts/clang/host/linux-x86/clang-r416183b1",
     "branch": "11.0"   
   }
